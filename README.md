@@ -5,8 +5,8 @@ This LSP was tested with Neovim, but would likely work inside VS Code.
 [Lesson By TJ DeVries](https://www.youtube.com/watch?v=YsdlcQoHqPY)
 
 ## Quick setup on neovim
-1. Build the project with `go build main.go`
-2. Setup the binary to the lsp consig in you nvim config
+1. Build the project binary with `go build main.go`
+2. Setup the LSP in your nvim config
 
 ```lua
 local client = vim.lsp.start_client {
