@@ -2,7 +2,7 @@
 A Language Server built for the educational purpose of understanding **WHAT** LSP is and **HOW** it works.
 This LSP was tested with Neovim, but would likely work inside VS Code.
 
-[Lesson By TJ DeVries](https://www.youtube.com/watch?v=YsdlcQoHqPY)
+Original project was made following [this lesson By TJ DeVries](https://www.youtube.com/watch?v=YsdlcQoHqPY)
 
 ## Quick setup on neovim
 1. Build the project binary with `go build main.go`
