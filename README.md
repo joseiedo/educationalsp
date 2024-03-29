@@ -1,4 +1,4 @@
-# `educationalsp`
+# `simplelsp`
 A Language Server built for the educational purpose of understanding **WHAT** LSP is and **HOW** it works.
 This LSP was tested with Neovim, but would likely work inside VS Code.
 
