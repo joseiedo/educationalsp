@@ -109,6 +109,27 @@ func (s *State) CodeAction(id int, uri string) lsp.TextDocumentCodeActionRespons
 	return response
 }
 
+func (s *State) TextDocumentCompletion(id int, uri string) lsp.CompletionResponse {
+	// In real life it would ask your static analysis tools to figure out good completions
+	items := []lsp.CompletionItem{
+		{
+			Label:         "Neovim (BTW)",
+			Detail:        "Very cool editor",
+			Documentation: "I'm very productive with it. Just need to update my dotfiles 24 hours a day!",
+		},
+	}
+
+	response := lsp.CompletionResponse{
+		Response: lsp.Response{
+			RPC: "2.0",
+			ID:  &id,
+		},
+		Result: items,
+	}
+
+	return response
+}
+
 func LineRange(line, start, end int) lsp.Range {
 	return lsp.Range{
 		Start: lsp.Position{
